@@ -83,6 +83,7 @@ const DayDetails = (props) => {
             setLoading(false);
             setWeatherError(false);
             res_list.map(item => {
+                console.log(item)
                 let curr_date_data = new Date();
                 let res_date_data = new Date(item.dt_txt);
                 let curr_date = curr_date_data.getDate();
