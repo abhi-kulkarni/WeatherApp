@@ -83,14 +83,15 @@ const DayDetails = (props) => {
             setLoading(false);
             setWeatherError(false);
             res_list.map(item => {
+                console.log(item)
                 let curr_date_data = new Date();
                 let res_date_data = new Date(item.dt_txt);
                 let curr_date = curr_date_data.getDate();
-                let curr_month = curr_date_data.getMonth();
+                let curr_month = curr_date_data.getMonth()+1;
                 let curr_year = curr_date_data.getFullYear();
                 let curr_time = curr_date_data.getHours();
                 let res_date = res_date_data.getDate(); 
-                let res_month = res_date_data.getMonth();
+                let res_month = res_date_data.getMonth()+1;
                 let res_year = res_date_data.getFullYear();
                 let res_time = res_date_data.getHours();
                 let req_curr_date = curr_date+'-'+curr_month+'-'+curr_year;
