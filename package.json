@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://abhi-kulkarni.github.io/weather-app/",
+  "homepage": "https://abhi-kulkarni.github.io/weather-app/",
   "babel": {
     "presets": [
       "@babel/preset-react",
