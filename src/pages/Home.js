@@ -11,7 +11,7 @@ import DayWeather from '../components/DayWeather'
 import { css } from "@emotion/react";
 import ClipLoader from "react-spinners/ClipLoader"
 import bgImage from '../assets/background.jpg'
-import API_DATA_KEY from '../constants'
+import { API_DATA_KEY } from '../constants'
 
 const DayDetails = (props) => {
 

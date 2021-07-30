@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import DayWeather from '../components/DayWeather'
 import bgImage from '../assets/background.jpg'
+import { API_DATA_KEY } from '../constants'
 
 const DayDetails = (props) => {
 
@@ -38,7 +39,7 @@ const DayDetails = (props) => {
         0: 'Sunday'
     }
 
-    const API_KEY = 'fbde675dbefa5b71917c7e2f8cb14bdf'
+    const API_KEY = API_DATA_KEY
     
     useEffect(() => {
         if(location.state){
