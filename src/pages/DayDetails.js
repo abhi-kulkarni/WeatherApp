@@ -62,7 +62,7 @@ const DayDetails = (props) => {
     }
 
     const getWeather = (curr_country, curr_city, req_curr_date) => {
-        axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${curr_city},${curr_country}&appid=${API_KEY}`).then(resp => {
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${curr_city},${curr_country}&appid=${API_KEY}`).then(resp => {
             let res_list = resp.data.list;
             let weather_data_list = [];
             setWeatherError(false);

@@ -77,13 +77,12 @@ const DayDetails = (props) => {
         let d_country = init?req_country:country
         setLoading(true);
         setWeatherList([]);
-        axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${d_city},${d_country}&appid=${API_KEY}`).then(resp => {
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${d_city},${d_country}&appid=${API_KEY}`).then(resp => {
             let res_list = resp.data.list;
             let weather_data_list = [];
             setLoading(false);
             setWeatherError(false);
             res_list.map(item => {
-                console.log(item)
                 let curr_date_data = new Date();
                 let res_date_data = new Date(item.dt_txt);
                 let curr_date = curr_date_data.getDate();
