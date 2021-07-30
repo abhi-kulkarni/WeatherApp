@@ -11,6 +11,7 @@ import DayWeather from '../components/DayWeather'
 import { css } from "@emotion/react";
 import ClipLoader from "react-spinners/ClipLoader"
 import bgImage from '../assets/background.jpg'
+import API_DATA_KEY from '../constants'
 
 const DayDetails = (props) => {
 
@@ -50,7 +51,7 @@ const DayDetails = (props) => {
         margin-top: 18%;
     `;
 
-    const API_KEY = 'fbde675dbefa5b71917c7e2f8cb14bdf'
+    const API_KEY = API_DATA_KEY
 
     useEffect(() => {
         if (location.redirected) {
